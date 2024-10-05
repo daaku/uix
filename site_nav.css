@@ -1,0 +1,120 @@
+.nav {
+  --size-nav-height: 2.5lh;
+  --size-button-width: 2rem;
+  --size-button-line-width: 0.25lh;
+  --time-transition: 150ms;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  color: #FFF;
+  height: var(--size-nav-height);
+  padding: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  margin: 0 1rem;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: none;
+  height: 100%;
+  width: var(--size-button-width);
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle {
+  display: none;
+}
+
+.button,
+.button::before,
+.button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: var(--size-button-line-width);
+  width: var(--size-button-width);
+  transition: all var(--time-transition) cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-radius: 0.2ch;
+}
+
+.button::before {
+  content: '';
+  margin-top: calc(-2 * var(--size-button-line-width));
+}
+
+.button::after {
+  content: '';
+  margin-top: calc(2 * var(--size-button-line-width));
+}
+
+.toggle:checked+.button-container .button::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+
+.toggle:checked+.button-container .button {
+  background: rgba(255, 255, 255, 0);
+}
+
+.toggle:checked+.button-container .button::after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 70ch) {
+  .button-container {
+    display: flex;
+  }
+
+  .menu {
+    float: right;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    margin-top: var(--size-nav-height);
+    flex-direction: column;
+  }
+
+  .toggle~.menu {
+    left: 100%;
+    transition: left var(--time-transition) cubic-bezier(0.12, 0, 0.39, 0);
+  }
+
+  .toggle:checked~.menu {
+    left: 0;
+    transition: left var(--time-transition) cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu a {
+    display: block;
+    line-height: 1cap;
+    border: 0.1ch solid #333;
+    text-align: center;
+    margin: 0;
+    padding: 1.25cap 0;
+    color: white;
+    background-color: #222;
+  }
+}

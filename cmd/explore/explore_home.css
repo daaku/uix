@@ -1,0 +1,26 @@
+.root {
+  --color-border: #aaa;
+
+  display: block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.root a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #eee;
+  border-bottom: 0.1ch solid var(--color-border);
+  width: 100vw;
+}
+
+.root a:active {
+  outline-style: double;
+  outline-color: var(--color-border);
+}
+
+.root li:first-child a {
+  border-top: 0.1ch solid var(--color-border);
+}

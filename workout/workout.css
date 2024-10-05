@@ -1,0 +1,25 @@
+.input-header {
+  font-variant: small-caps;
+  border-bottom: 0.1ch solid #0A84FF;
+  margin-bottom: 0.75ch;
+}
+
+.input-number-group {
+  display: flex;
+  gap: 1ch;
+}
+
+.input-number {
+  padding: 0 0.5ch;
+  font-size: 2rem;
+  width: 7ch;
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

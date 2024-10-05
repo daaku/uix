@@ -1,0 +1,21 @@
+.form {
+  --spacer: 1ch;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--spacer);
+  margin-top: var(--spacer);
+}
+
+.form input {
+  padding: 0.5ch;
+  width: 100%;
+  min-width: 10ch;
+}
+
+.buttons {
+  grid-column-start: 2;
+  display: inline-flex;
+  gap: var(--spacer);
+}

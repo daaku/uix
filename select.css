@@ -1,0 +1,16 @@
+.root {
+  --padding-x: 0.5cap;
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1cap;
+  padding: 0.7cap calc(var(--padding-x) * 2) 0.7cap var(--padding-x);
+  width: calc(100% + var(--padding-x) *3);
+  border: 1px solid #dee2e6;
+
+  /* custom chevron from bootstrap */
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right var(--padding-x) center;
+  background-size: 1.5cap 1.125cap;
+}

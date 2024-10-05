@@ -1,0 +1,29 @@
+@media (prefers-color-scheme: light) {
+  .root {
+    --color-bg: #fff;
+    --color-fg: #000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .root {
+    --color-bg: #212121;
+    --color-fg: #F6F5F7;
+  }
+}
+
+.root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.content {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

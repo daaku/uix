@@ -1,0 +1,55 @@
+.root {
+  display: inline-flex;
+  gap: 0.75cap;
+  align-items: center;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: 0.1cap solid var(--color-border);
+  border-radius: 0.5cap;
+  box-shadow: var(--color-shadow) 0 0.1cap 0 0 inset;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 1cap;
+  padding: 0.7cap 1cap;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.root:hover,
+.root:focus {
+  background-color: var(--color-focus-bg);
+  color: var(--color-focus-fg)
+}
+
+.root:focus {
+  box-shadow: 0 0 0 0.4cap rgba(0, 149, 255, .15);
+}
+
+.root:active {
+  background-color: var(--color-active-bg);
+  color: var(--color-active-fg);
+  box-shadow: none;
+}
+
+.primary {
+  --color-bg: #0095ff;
+  --color-fg: #fff;
+  --color-shadow: rgba(255, 255, 255, .4);
+  --color-border: transparent;
+  --color-focus-bg: #07c;
+  --color-focus-fg: var(--color-fg);
+  --color-active-bg: #0064bd;
+  --color-active-fg: var(--color-fg);
+}
+
+.secondary {
+  --color-bg: #e1ecf4;
+  --color-fg: #39739d;
+  --color-shadow: rgba(255, 255, 255, .7);
+  --color-border: #7aa7c7;
+  --color-focus-bg: #b3d3ea;
+  --color-focus-fg: #2c5777;
+  --color-active-bg: #a0c7e4;
+  --color-active-fg: var(--color-focus-fg);
+}

@@ -1,0 +1,64 @@
+@media (prefers-color-scheme: light) {
+  .root {
+    --color-unchecked: #2196F3;
+    --color-checked: #4CAF50;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .root {
+    --color-unchecked: #4B4B4B;
+    --color-checked: #4CAF50;
+  }
+}
+
+.root {
+  --size-width: 1.75lh;
+  --size-height: 1lh;
+
+  --size-circle: calc((var(--size-height) * 0.75));
+  --size-circle-space: calc((var(--size-height) - var(--size-circle)) / 2);
+
+  position: relative;
+  display: inline-block;
+  width: var(--size-width);
+  height: var(--size-height);
+  vertical-align: bottom;
+}
+
+.root>input {
+  display: none;
+}
+
+.root>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--size-width);
+  height: var(--size-height);
+  background-color: var(--color-unchecked);
+  border-radius: calc(var(--size-height) * 1.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.root>label::before {
+  content: "";
+  position: absolute;
+  width: var(--size-circle);
+  height: var(--size-circle);
+  border-radius: 50%;
+  top: var(--size-circle-space);
+  left: var(--size-circle-space);
+  background-color: #fff;
+  box-shadow: 0 0.2ch 0.5ch 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.root>input:checked+label {
+  background-color: var(--color-checked);
+}
+
+.root>input:checked+label::before {
+  transform: translateX(calc(var(--size-width) / 2 - var(--size-circle-space)));
+}
