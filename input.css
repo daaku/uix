@@ -1,0 +1,37 @@
+.root {
+  display: inline-block;
+  border: 0.1cap solid var(--color-border);
+  border-radius: 0.5cap;
+  padding: 0.5cap 0.75cap;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  box-shadow: var(--color-shadow) 0 0.1cap 0 0 inset;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.root:focus {
+  outline: none;
+  border-color: #0095ff;
+  box-shadow: 0 0 0 0.2cap rgba(0, 149, 255, .25);
+}
+
+.root:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.root::placeholder {
+  color: var(--color-placeholder);
+}
+
+.root[type="number"] {
+  text-align: right;
+}
+
+.root[type="search"] {
+  padding-right: 2.5cap;
+}

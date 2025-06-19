@@ -106,6 +106,16 @@ var examples = []example{
 		},
 	},
 	{
+		path:  "/input",
+		title: "Input",
+		component: func(styles *cssm.Collector) g.Node {
+			return h.Div(
+				h.Label(h.For("example-input"), g.Text("Example Input: ")),
+				uix.Input(styles, h.ID("example-input"), h.Type("text"), h.Placeholder("Enter text")),
+			)
+		},
+	},
+	{
 		path:  "/spinner",
 		title: "Spinner",
 		component: func(c *cssm.Collector) g.Node {
