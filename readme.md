@@ -1,3 +1,7 @@
+- single variable font multiplier
+- single variable spacing multiplier
+- single variable color theme
+
 - form: input
 - form: select
 - table
