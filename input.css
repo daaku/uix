@@ -11,6 +11,11 @@
   vertical-align: middle;
   width: 100%;
   box-sizing: border-box;
+  --color-border: #ccc;
+  --color-fg: #333;
+  --color-bg: #fff;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-placeholder: #999;
 }
 
 .root:focus {
