@@ -2,8 +2,8 @@ github.com/daaku/cssm v0.0.0-20241004095003-d589e1b8365a h1:FiK69nUz28WbWd2fAY/B
 github.com/daaku/cssm v0.0.0-20241004095003-d589e1b8365a/go.mod h1:0h0JS8ExCfMN5/f0kqhQmTIhCRF04ver7yWTBOJgAW0=
 github.com/daaku/lands v1.0.0 h1:8t3VW0z9+1759kRT4p1aZ+R3EtZLvVNU5Gu12hxgAZ0=
 github.com/daaku/lands v1.0.0/go.mod h1:/IhWphj5Ma3QSUzg4HJ85ENfLpCA+MqoNuAop2mfTwY=
-github.com/daaku/livereload v1.0.1 h1:MZl3D9VBzo7n/8MZkneOFGU9NzW0DyfZ//yalhKU4to=
-github.com/daaku/livereload v1.0.1/go.mod h1:d0yg1CB/B65B9EDZZc4WDaYswFJQ37ERNUjayh/iqq0=
+github.com/daaku/livereload v1.1.0 h1:s8uxWzcSoD3HqPWBQzUcBJUk14g+zahB3ZS7+oIqLWU=
+github.com/daaku/livereload v1.1.0/go.mod h1:d0yg1CB/B65B9EDZZc4WDaYswFJQ37ERNUjayh/iqq0=
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b h1:XxMZvQZtTXpWMNWK82vdjCLCe7uGMFXdTsJH0v3Hkvw=
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/maragudk/gomponents v0.22.0 h1:0gNrSDC1nM6w0Vxj5wgGXqV8frDH9UVPE+dEyy4ApPQ=
